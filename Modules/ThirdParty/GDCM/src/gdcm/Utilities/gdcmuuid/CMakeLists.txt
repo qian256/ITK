@@ -71,7 +71,7 @@ if(UNIX) #Avoid polluting Win32 cmakecache
   CHECK_INCLUDE_FILE_CONCAT("net/if_arp.h"   HAVE_NET_IF_ARP_H)
 endif()
 if(WIN32) #Avoid polluting UNIX cmakecache
-  CHECK_INCLUDE_FILE_CONCAT("winsock.h"       HAVE_WINSOCK_H)
+  CHECK_INCLUDE_FILE_CONCAT("winsock2.h"       HAVE_WINSOCK2_H)
 endif()
 
 set(UUID_HAVES_ALL

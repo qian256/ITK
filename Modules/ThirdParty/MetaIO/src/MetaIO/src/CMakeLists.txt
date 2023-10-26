@@ -145,7 +145,7 @@ if(WIN32)
   if(BORLAND)
     target_link_libraries(${METAIO_TARGET} PRIVATE import32)
   else()
-    target_link_libraries(${METAIO_TARGET} PRIVATE comctl32 wsock32)
+    target_link_libraries(${METAIO_TARGET} PRIVATE comctl32 ws2_32)
   endif()
 endif()
 

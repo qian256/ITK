@@ -8,7 +8,7 @@
 #  if !defined(_WIN32_WINNT) && !(defined(_MSC_VER) && _MSC_VER < 1300)
 #    define _WIN32_WINNT 0x0501
 #  endif
-#  include <winsock.h> // WSADATA, include before sys/types.h
+#  include <winsock2.h> // WSADATA, include before sys/types.h
 #endif
 
 #if (defined(__GNUC__) || defined(__PGI)) && !defined(_GNU_SOURCE)

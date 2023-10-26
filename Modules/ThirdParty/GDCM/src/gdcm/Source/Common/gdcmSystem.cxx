@@ -33,8 +33,8 @@
 #include <sys/time.h>
 #endif
 #include <time.h>
-#ifdef GDCM_HAVE_WINSOCK_H
-#include <winsock.h>
+#ifdef GDCM_HAVE_WINSOCK2_H
+#include <winsock2.h>
 #endif
 #include <cstdio> // snprintf
 #if defined(_MSC_VER) && (_MSC_VER < 1900)
